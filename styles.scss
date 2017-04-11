@@ -1,0 +1,77 @@
+@mixin center {text-align: center;}
+
+$dark: #333;
+$darker: #222;
+$boarder: 1px solid black;
+
+body {  
+  @include center;
+  background-color: #7e3878;
+}
+
+#app{
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.maintitle{   
+    @include center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: white;
+}
+.but{
+    @include center;
+    margin-bottom: 25px;
+}
+button{   
+    margin-left: 10px;
+}
+
+.Generation{
+    margin-bottom: 0;
+    @include center;
+    background-color: $dark;
+    padding-left: 40px;
+    padding-right: 40px;   
+    padding-top: 10px;
+    display:inline-block;
+    color: white;
+    font-size: 25px;
+    width: 260px;
+  text-align: left;
+}
+
+table{
+	background-color: $darker;
+    border: 10px solid $dark;
+    border-spacing: 1px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+tr:first-child td {
+  border-top: $boarder;
+}
+
+td {   
+    width: 1em;
+    height: 1em;
+    border-collapse: collapse;
+    border-right: $boarder;
+  border-bottom: $boarder;  
+  border-left: $boarder; 
+}
+
+.live {
+	background-color: #ddd;
+}
+
+.new {
+    background-color: #00a300;
+}
+
+.killed {
+    background-color: #A20025;
+}
